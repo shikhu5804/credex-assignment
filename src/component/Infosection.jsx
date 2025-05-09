@@ -6,14 +6,12 @@ function HowItWorks() {
     {
       icon: <FaUpload className="text-green-500 text-4xl" />,
       title: "Upload License",
-      description:
-        "Submit your unused software license with a few easy clicks.",
+      description: "Submit your unused software license with a few easy clicks.",
     },
     {
       icon: <FaSearchDollar className="text-green-500 text-4xl" />,
       title: "Get Valuation",
-      description:
-        "Our system evaluates your license and gives you a competitive quote.",
+      description: "Our system evaluates your license and gives you a competitive quote.",
     },
     {
       icon: <FaMoneyCheckAlt className="text-green-500 text-4xl" />,
@@ -23,11 +21,14 @@ function HowItWorks() {
   ];
 
   return (
-    <div id="how" className="bg-white py-16 px-6 md:px-16 lg:px-32">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+    <div
+      id="how"
+      className="bg-white dark:bg-black py-16 px-6 md:px-16 lg:px-32 transition-colors duration-300"
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-black dark:text-white">
         How It Works
       </h2>
-      <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12 text-lg">
+      <p className="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12 text-lg">
         A simple, step-by-step process to help you sell your unused software
         licenses easily and confidently.
       </p>
@@ -36,11 +37,13 @@ function HowItWorks() {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="border rounded-lg p-8 shadow-md hover:shadow-xl transition duration-300 text-center"
+            className="border border-gray-200 dark:border-gray-700 rounded-lg p-8 shadow-md hover:shadow-xl transition duration-300 text-center bg-white dark:bg-gray-800"
           >
             <div className="mb-6 flex justify-center">{step.icon}</div>
-            <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-            <p className="text-gray-600">{step.description}</p>
+            <h3 className="text-xl font-semibold mb-2 text-black dark:text-white">
+              {step.title}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300">{step.description}</p>
           </div>
         ))}
       </div>

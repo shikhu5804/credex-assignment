@@ -6,6 +6,8 @@ import ChooseUs from "./component/ChooseUs";
 import ReviewSection from "./component/Review";
 import ContactForm from "./component/ContactForm";
 import Footer from "./component/Footer";
+import ChatWidget from "./component/Chat";
+import DarkModeToggle from "./component/Toogle";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
       <ReviewSection />
       <ContactForm />
       <Footer />
+      <ChatWidget />
+      <DarkModeToggle />
 
       
     </div>

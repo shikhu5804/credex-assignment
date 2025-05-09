@@ -9,7 +9,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black pt-10 pb-6 px-6 md:px-16 lg:px-32 border-t border-gray-200">
+    <footer className="bg-white dark:bg-black  text-black dark:text-white pt-10 pb-6 px-6 md:px-16 lg:px-32 border-t border-gray-200 dark:border-gray-700">
+      {" "}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Company Info */}
         <div>
@@ -24,7 +25,7 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-gray-700">
             <li>
-              <a href="#home" className="hover:text-black transition">
+              <a href="#home" className="hover:text-black ">
                 Home
               </a>
             </li>
@@ -82,7 +83,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       {/* Copyright */}
       <div className="text-center mt-10 pt-4 text-sm text-gray-500">
         © {new Date().getFullYear()} SoftSell. All rights reserved.

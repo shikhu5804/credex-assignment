@@ -10,14 +10,14 @@ const testimonials = [
     role: "Product Manager",
     company: "VisionX Solutions",
     text: "Working with your team was a game-changer for us. The delivery was smooth, fast, and exceeded our expectations. We truly felt heard and understood throughout the process.",
-    bgColor: "bg-[#96DCC7]"
+    bgColor: "bg-[#96DCC7] dark:bg-[#5CBFA2]"
   },
   {
     name: "David Lee",
     role: "CEO",
     company: "NovaTech Innovations",
     text: "What stood out the most was the attention to detail and clarity in communication. We’ve collaborated with several teams before, but this experience was truly outstanding.",
-    bgColor: "bg-[#CCF56B]"
+    bgColor: "bg-[#CCF56B] dark:bg-[#9EBF3D]"
   }
 ];
 
@@ -45,9 +45,12 @@ const ReviewSection = () => {
   }, []);
 
   return (
-    <section id="reviews" className="py-20 px-6 bg-white">
-      <h2 className="text-5xl font-bold text-center mb-12">
-      Trusted by Professionals
+    <section
+      id="reviews"
+      className="px-6 mt-20 bg-white dark:bg-black transition-colors duration-300"
+    >
+      <h2 className="text-5xl font-bold text-center mb-12 text-black dark:text-white">
+        Trusted by Professionals
       </h2>
 
       <div className="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
@@ -55,7 +58,7 @@ const ReviewSection = () => {
           <div
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
-            className={`p-6 rounded-xl shadow-lg transform transition-transform duration-300 ${review.bgColor}`}
+            className={`p-6 rounded-xl shadow-lg transform transition-transform duration-300 text-black dark:text-white ${review.bgColor}`}
           >
             <p className="text-3xl font-medium mb-4">"{review.text}"</p>
             <p className="text-lg font-semibold">

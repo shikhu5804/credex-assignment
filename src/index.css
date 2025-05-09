@@ -45,6 +45,32 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global styles */
+html,
+body {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+button {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for button color */
+}
+
+.dark button {
+  background-color: #444;
+  color: white;
+}
+
+/* Add any other styles you need for smooth transitions */
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
