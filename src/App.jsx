@@ -8,10 +8,13 @@ import ContactForm from "./component/ContactForm";
 import Footer from "./component/Footer";
 import ChatWidget from "./component/Chat";
 import DarkModeToggle from "./component/Toogle";
+import { Toaster } from 'react-hot-toast';
+
 
 const App = () => {
   return (
     <div>
+      <Toaster position="top-right" reverseOrder={false} />
       <Hero />
       <ZoomImageOnScroll />
       <InfoSection />
@@ -21,8 +24,6 @@ const App = () => {
       <Footer />
       <ChatWidget />
       <DarkModeToggle />
-
-      
     </div>
   );
 };

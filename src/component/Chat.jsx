@@ -52,7 +52,6 @@ export default function ChatWidget() {
           onClick={() => setIsOpen(true)}
           aria-label="Open chat"
         >
-          {/* Chat bubble icon from Heroicons */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-white"

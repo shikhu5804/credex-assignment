@@ -4,7 +4,6 @@ import { FiMoon, FiSun } from 'react-icons/fi';
 const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
 
-  // Check for dark mode preference when the component is mounted
   useEffect(() => {
     const savedMode = localStorage.getItem('darkMode');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -16,7 +15,6 @@ const DarkModeToggle = () => {
     }
   }, []);
 
-  // Update the document's class and localStorage whenever darkMode state changes
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
