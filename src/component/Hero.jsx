@@ -74,17 +74,21 @@ const Hero = () => {
         >
           SoftSell makes it easy for businesses to sell their unused or rarely
           used SaaS subscriptions safely and quickly, helping them earn extra{" "}
-          <span className="bg-[#00FF00] text-black dark:bg-green-500 font-bold">revenue.</span>
+          <span className="bg-[#00FF00] text-black dark:bg-green-500 font-bold">
+            revenue.
+          </span>
         </motion.p>
 
         <motion.div className="mt-5" variants={itemVariants}>
-          <motion.button
-            className="px-8 py-3 bg-black dark:bg-gray-800 animate-bounce mt-6 duration-700 text-white text-lg border border-black dark:border-gray-700 hover:bg-gray-800 dark:hover:bg-gray-700 transition rounded-full"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get a Quote
-          </motion.button>
+          <a href="#contact">
+            <motion.button
+              className="px-8 py-3 bg-black dark:bg-gray-800 animate-bounce mt-6 duration-700 text-white text-lg border border-black dark:border-gray-700 hover:bg-gray-800 dark:hover:bg-gray-700 transition rounded-full"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get a Quote
+            </motion.button>
+          </a>
         </motion.div>
       </motion.section>
     </motion.div>
